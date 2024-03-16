@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+body {
+    font-family: 'Rajdhani', 'Lucida Sans';
+    padding: 0;
+    margin: 0;
+    background-color: #f1ecec;
+}
+a {
+    text-decoration: none;
+}
+
+.table-joia {
+    height: 600px;
+    background-image: url(images/Firefly\ loja\ de\ joias\ de\ brincos\ e\ cordões\ 54694.jpg);
+    background-color: rgba(0, 255, 255, 0.359);
+    background-size: cover;
+}
+.table-joia header {
+    width: 100%;
+    height: 15vh;
+    background-color: #fdd236b0/*rgba(137, 43, 226, 0.422)*/;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+.info-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Rajdhani';
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+.info-left img {
+    width: 75px;
+    border-radius: 5vw;
+    border: 5px solid white;
+}
+.info-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-right ol {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.3em;
+    display: flex;
+    font-weight: bolder;
+    list-style: none;
+    gap: 2vw;
+}
+
+.info-right a{
+    text-decoration: none;
+    color: #fff;
+    transition: .7s;
+}
+
+.info-right a:hover{
+    transition: .7s;
+    color: #d0bbbbb0;
+}
+.msg-welcome {
+    width: 100%;
+    height: 78%;
+    display: flex;
+    justify-content: left;
+}
+.card-msg {
+    width: 100%;
+    margin-top: 14vh;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    height: 78%;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+.card-msg h1 {
+    font-size: 4em;
+}
+.card-msg p{
+    font-size: 2em;
+}
+
+.sobre{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+.centabout {
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardabout {
+    width: 37%;
+    height: 65%;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+}
+.cardabout div {
+   display: flex;
+   flex-direction: column;
+   font-weight: 600;
+   height: 15em;
+}
+.cardabout div h2{
+    font-size: 25px;
+}
+
+.cardabout div ul{
+    list-style: none;
+}
+.products {
+    width: 81vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products h2{
+    margin-left: 5vw;
+}
+.card img {
+    height: 25em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+}
+
+.carousel-item{
+    width: 90%;
+}
+.carousel-inner{
+    margin-left: 5vw;
+}
+.z-index{
+    z-index: 1;
+}
+.order-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.orders {
+    width: 81%;
+    height: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders .card {
+    height: 20em;
+    width: 20%;
+}
+.card-title, .card-text {
+    font-size: 100%;
+}
+
+.contacts {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-contacts ul, .number-and-site ul{
+    list-style: none;
+}
+.options-after-click {
+    display: none;
+}
+
+@media screen and (max-width: 1345px) {
+    .info-right ol li a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1266px) {
+    .cardabout div p{
+        font-size: 17px;
+    }
+    .info-right ol li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .cardabout div p{
+        font-size: 14px;
+    }
+    .info-right{
+        width: 72%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .centabout{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cardabout {
+        width: 90%;
+        height: 50%;
+    }
+    .cardabout div p{
+        font-size: 20px;
+    }
+    .sobre {
+        height: 900px;
+    }
+    .info-right {
+        display: none;
+    }
+    .info-left {
+        width: 80%;
+    }
+    .botton-after {
+        width: 20%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .botton-after img {
+        color: rgb(253, 253, 253);
+        width: 70%;
+        display: flex;
+    }
+    .options-after-click {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .options-after-click ol {
+        list-style: none;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: first baseline;
+    }
+    .options-after-click ol li a{
+        color: #000;
+    }
+    .options-after-click ol li a:hover{
+        color: rgb(27, 34, 227);
+    }
+    .options-after-click svg{
+        max-width: 50px;
+        width: 100%;
+    }
+    .card img {
+        height: 17em;
+    }
+    .order-products{
+        height: 220em;
+    }
+    .orders{
+        flex-direction: column;
+        align-items: center;
+    }
+    .orders .card{
+        width: 70%;
+        height: 25em;
+    }
+    .card-msg {
+        align-items: first baseline;
+        margin-top: 16vh;
+        flex-wrap: wrap
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card img {
+        height: 13em;
+    }
+    .orders .card {
+        width: 100%;
+    }
+    .card-body {
+        height: 20vh;   
+        font-size: 24px;
+    }
+    .cardabout div p{
+        font-size: 15px;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .card-msg p{
+        font-size: 1.3em;
+    }
+    #carouselExampleAutoplaying > div > div.carousel-item.active > div {
+        width: 100%;
+    }
+    #carouselExampleAutoplaying > div > div.carousel-item.active > div p{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 308px){
+    .card-body {
+        height: 20vh;   
+        font-size: 20px;
+    }
+}
